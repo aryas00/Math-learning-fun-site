@@ -1,0 +1,65 @@
+body {
+  background-image: url('C:\Users\MANAN GUPTA\Desktop\powerpoint-math-for-kids-background-design-template-9c7101e6f62f51589b70148f650f4f6e_screen.jpg');
+  background-size: cover; /* Adjust as needed */
+  /* Additional background properties can be added here */
+}
+
+/* Animation for the entire site */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.App {
+  animation: fadeIn 1s ease-out; /* Apply fade-in animation when the site loads */
+}
+
+/* Animation for the header */
+.Header {
+  animation: slideDown 0.5s ease-out; /* Apply slide-down animation to the header */
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animation for the matching exercise */
+.matching-exercise {
+  animation: bounce 0.5s ease-out; /* Apply bounce animation to the matching exercise */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Animation for the footer */
+.Footer {
+  animation: slideUp 0.5s ease-out; /* Apply slide-up animation to the footer */
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

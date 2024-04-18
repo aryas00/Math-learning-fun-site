@@ -1,0 +1,51 @@
+.matching-exercise {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.operations {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.operation {
+  margin: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: 150px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.operation.dropped {
+  background-color: #66cc99;
+  cursor: default;
+}
+
+.matching-area {
+  background-color: #66ccff;
+  color: #fff;
+  font-size: 18px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.incorrect {
+  background-color: #ff6666 !important;
+}
+
+/* Animation for draggable operations */
+.operation:hover {
+  transform: translateY(-5px);
+}
